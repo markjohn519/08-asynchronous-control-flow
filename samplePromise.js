@@ -40,16 +40,13 @@ function start() {
   myAsync1('y').then(result => {
     console.log(result)
     return myAsync2()
-  })
-  myAsync2('y').then(result => {
+  }).then(result => {
     console.log(result)
     return myAsync3()
-  })
-  myAsync3('y').then(result => {
+  }).then(result => {
     console.log(result)
     return myAsync4()
-  })
-  myAsync4().then(result => {
+  }).then(result => {
     console.log(result)
   }).catch(error => {
     console.log('In the catch', error);
